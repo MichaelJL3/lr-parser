@@ -1,5 +1,9 @@
 .vscode/
 
+coverage.xml
+coverage.sh
+codecov
+
 obj/
 bin/
 TestResults/
