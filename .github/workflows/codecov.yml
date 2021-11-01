@@ -12,11 +12,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Restore dependencies
-      run: dotnet restore
-    - name: Build
-      run: dotnet build --no-restore /p:ContinuousIntegrationBuild=true
-    - name: Test
-      run: dotnet test --no-build --verbosity normal /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
+    - name: Coverlet
+      uses: b3b00/coverlet-action@1.1.7
+      with:
+        testProject: 'ParserTest/ParserTest.csproj'
+        output: 'lcov.info'
+        outputFormat: 'lcov'
+        excludes: '[program]*,[test]test.*'
     - name: Codecov
       uses: codecov/codecov-action@v2.1.0
