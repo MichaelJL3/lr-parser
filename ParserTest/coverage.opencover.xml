@@ -2,9 +2,9 @@
 <CoverageSession>
   <Summary numSequencePoints="132" visitedSequencePoints="130" numBranchPoints="28" visitedBranchPoints="26" sequenceCoverage="98.48" branchCoverage="92.85" maxCyclomaticComplexity="50" minCyclomaticComplexity="50" visitedClasses="8" numClasses="8" visitedMethods="29" numMethods="29" />
   <Modules>
-    <Module hash="B6D615C5-F937-40D6-8BDD-FA59F7A8CE4B">
+    <Module hash="B8A555AD-4675-40CF-A0DD-61375AEB3358">
       <ModulePath>ParserLib.dll</ModulePath>
-      <ModuleTime>2021-11-01T05:49:46</ModuleTime>
+      <ModuleTime>2021-11-01T06:01:51</ModuleTime>
       <ModuleName>ParserLib</ModuleName>
       <Files>
         <File uid="1" fullPath="C:\Users\micha\Desktop\dev\Parser\ParserLib\LRParser.cs" />
