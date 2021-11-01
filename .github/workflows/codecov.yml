@@ -18,6 +18,6 @@ jobs:
         testProject: 'ParserTest/ParserTest.csproj'
         output: 'coverage.opencover.xml'
         outputFormat: 'opencover'
-        excludes: '[program]*,[test]test.*'
+        excludes: '[test]test.*'
     - name: Codecov
       uses: codecov/codecov-action@v2.1.0
