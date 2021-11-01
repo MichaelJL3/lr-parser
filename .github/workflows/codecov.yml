@@ -16,7 +16,7 @@ jobs:
       uses: b3b00/coverlet-action@1.1.7
       with:
         testProject: 'ParserTest/ParserTest.csproj'
-        output: 'opencover.info'
+        output: 'coverage.opencover.xml'
         outputFormat: 'opencover'
         excludes: '[program]*,[test]test.*'
     - name: Codecov
