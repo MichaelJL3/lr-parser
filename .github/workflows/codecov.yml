@@ -13,6 +13,6 @@ jobs:
 
     steps:
     - name: Coverlet
-      run: dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
+      run: dotnet test Parser.sln /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
     - name: Codecov
       uses: codecov/codecov-action@v2.1.0
