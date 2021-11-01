@@ -13,11 +13,6 @@ jobs:
 
     steps:
     - name: Coverlet
-      uses: b3b00/coverlet-action@1.1.7
-      with:
-        testProject: 'ParserTest/ParserTest.csproj'
-        output: 'coverage.opencover.xml'
-        outputFormat: 'opencover'
-        excludes: '[test]test.*'
+      run: dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
     - name: Codecov
       uses: codecov/codecov-action@v2.1.0
